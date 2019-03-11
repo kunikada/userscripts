@@ -5,8 +5,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @author       kunikada
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
+// @downloadURL  https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
 // @match        https://info.finance.yahoo.co.jp/portfolio/display/?portfolio_id=pf_1*
 // @grant        GM_setValue
 // @grant        GM_getValue
