@@ -1,2 +1,7 @@
 # userscripts
-GreaseM
+Greasemonkey/Tampermonkeyu userscripts.
+
+## File list
+
+### portfolioo.js
+support Yahoo! Finance portfolio.
