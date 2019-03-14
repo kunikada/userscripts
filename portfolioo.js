@@ -3,7 +3,7 @@
 // @name         Portfolioo!
 // @description  support Yahoo! Finance portfolio.
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @author       kunikada
 // @updateURL    https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
 // @downloadURL  https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
@@ -80,11 +80,11 @@ class Instrument {
             case 4: // 国内中小型株
                 return 0.06;
             case 5: // 先進国債券
-                return 0.05;
+                return 0.06;
             case 6: // 新興国債券
                 return 0.04;
             case 7: // 国内債券
-                return 0.05;
+                return 0.04;
             case 8: // 金
                 return 0.04;
             case 9: // 先進国REIT
@@ -194,7 +194,7 @@ class Instruments {
         let tr = document.createElement('tr');
         tr.innerHTML = `
             <td>総合計: ${instruments.totalSum.toYen()}</td>
-            <td>現金:<input id="cash" type="text" value="${cash.amount.toYen('')}" style="width:6em;text-align:right;">円</td>
+            <td>現金<input id="cash" type="text" value="${cash.amount.toYen('')}" style="width:6em;text-align:right;">円</td>
             <td>適正: ${cash.amountGoal.toYen()}</td>
             <td>差分: ${(cash.amountGoal - cash.amount).toYen()}</td>
             `;
