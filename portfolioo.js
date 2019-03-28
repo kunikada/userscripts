@@ -77,9 +77,9 @@ class Instrument {
             case 2: // 新興国株
                 return 0.05;
             case 3: // 国内大型株
-                return 0.15;
+                return 0.14;
             case 4: // 国内中小型株
-                return 0.06;
+                return 0.05;
             case 5: // 先進国債券
                 return 0.06;
             case 6: // 新興国債券
@@ -93,7 +93,7 @@ class Instrument {
             case 10: // 国内REIT
                 return 0.09;
             case 11: // 現金
-                return 0.1;
+                return 0.12;
         }
         return 0;
     }
