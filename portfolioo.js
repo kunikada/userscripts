@@ -3,7 +3,7 @@
 // @name         Portfolioo!
 // @description  support Yahoo! Finance portfolio.
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @author       kunikada
 // @updateURL    https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
 // @downloadURL  https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
@@ -17,6 +17,9 @@ String.prototype.parseWithComma =  function() {
 }
 Number.prototype.toYen = function(unit = '円') {
     return this.toLocaleString('ja', {maximumFractionDigits: 0}) + unit;
+}
+Number.prototype.toParcentage = function() {
+    return (this > 0 ? '+' : '') + Math.round(this * 1000) / 10;
 }
 
 class Instrument {
@@ -112,7 +115,7 @@ class Instrument {
         document.getElementById(this.id + 'Amount').innerHTML = `
             ${this.amount.toYen()}<br>
             ${this.amountGoal.toYen()}<br>
-            ${(this.amountGoal - this.amount).toYen()}
+            ${(this.amountGoal - this.amount).toYen()}（${((categoryGoal - categorySum) / categoryGoal).toParcentage()}%）
             `;
     }
 }
