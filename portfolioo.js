@@ -48,20 +48,24 @@ class Instrument {
             case '2931517A':
                 return 2; // 新興国株
             case '03317172':
+            case '0331C177':
             case '29312154':
                 return 3; // 国内大型株
+            case '0431118A':
             case '09311143':
                 return 4; // 国内中小型株
             case '2931213C':
             case '4731216A':
                 return 5; // 先進国債券
+            case '0331A172':
             case '0431U169':
                 return 6; // 新興国債券
             case '03318172':
             case '29314151':
                 return 7; // 国内債券
+            case '03311156':
             case '6431717B':
-                return 8; // 金
+                return 8; // コモディティ
             case 'AJ319178':
                 return 9; // 先進国REIT
             case 'AJ318178':
@@ -76,27 +80,27 @@ class Instrument {
     get rateGoal() {
         switch (this.category) {
             case 1: // 先進国株
-                return 0.28;
+                return 0.25;
             case 2: // 新興国株
                 return 0.05;
             case 3: // 国内大型株
-                return 0.14;
+                return 0.13;
             case 4: // 国内中小型株
                 return 0.05;
             case 5: // 先進国債券
-                return 0.06;
+                return 0.05;
             case 6: // 新興国債券
                 return 0.04;
             case 7: // 国内債券
                 return 0.04;
-            case 8: // 金
+            case 8: // コモディティ
                 return 0.04;
             case 9: // 先進国REIT
-                return 0.09;
+                return 0.1;
             case 10: // 国内REIT
-                return 0.09;
+                return 0.1;
             case 11: // 現金
-                return 0.12;
+                return 0.15;
         }
         return 0;
     }
