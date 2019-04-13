@@ -3,7 +3,7 @@
 // @name         Portfolioo!
 // @description  support Yahoo! Finance portfolio.
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @author       kunikada
 // @updateURL    https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
 // @downloadURL  https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
