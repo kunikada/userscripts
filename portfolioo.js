@@ -3,7 +3,7 @@
 // @name         Portfolioo!
 // @description  support Yahoo! Finance portfolio.
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @author       kunikada
 // @updateURL    https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
 // @downloadURL  https://raw.githubusercontent.com/kunikada/userscripts/master/portfolioo.js
@@ -55,9 +55,9 @@ class Instrument {
             case '09311143':
                 return 4; // 国内中小型株
             case '2931213C':
+            case '0331A172':
             case '4731216A':
                 return 5; // 先進国債券
-            case '0331A172':
             case '0431U169':
                 return 6; // 新興国債券
             case '03318172':
@@ -84,13 +84,13 @@ class Instrument {
             case 2: // 新興国株
                 return 0.05;
             case 3: // 国内大型株
-                return 0.13;
+                return 0.1;
             case 4: // 国内中小型株
-                return 0.05;
+                return 0.06;
             case 5: // 先進国債券
                 return 0.05;
             case 6: // 新興国債券
-                return 0.04;
+                return 0.05;
             case 7: // 国内債券
                 return 0.04;
             case 8: // コモディティ
@@ -98,9 +98,9 @@ class Instrument {
             case 9: // 先進国REIT
                 return 0.1;
             case 10: // 国内REIT
-                return 0.1;
+                return 0.12;
             case 11: // 現金
-                return 0.15;
+                return 0.14;
         }
         return 0;
     }
