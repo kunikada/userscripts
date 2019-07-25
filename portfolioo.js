@@ -81,13 +81,13 @@ class Instrument {
     get rateGoal() {
         switch (this.category) {
             case 1: // 先進国株
-                return 0.25;
+                return 0.24;
             case 2: // 新興国株
-                return 0.05;
+                return 0.04;
             case 3: // 国内大型株
-                return 0.09;
+                return 0.08;
             case 4: // 国内中小型株
-                return 0.07;
+                return 0.04;
             case 5: // 先進国債券
                 return 0.05;
             case 6: // 新興国債券
@@ -95,13 +95,13 @@ class Instrument {
             case 7: // 国内債券
                 return 0.04;
             case 8: // コモディティ
-                return 0.04;
+                return 0;
             case 9: // 先進国REIT
-                return 0.1;
+                return 0.09;
             case 10: // 国内REIT
                 return 0.12;
             case 11: // 現金
-                return 0.14;
+                return 0.25;
         }
         return 0;
     }
